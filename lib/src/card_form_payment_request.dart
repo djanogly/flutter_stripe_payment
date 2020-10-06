@@ -19,6 +19,7 @@ class CardFormPaymentRequest {
     if (this.prefilledInformation != null) {
       data['prefilledInformation'] = this.prefilledInformation.toJson();
     }
+    data['cardScanningEnabled'] = true;
     return data;
   }
 }
